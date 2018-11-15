@@ -1,0 +1,218 @@
+@charset "UTF-8";
+body {
+  margin-top: 50px;
+  background-color: #F5F5F5;
+}
+.navbar-brand img {
+  height: 50px;
+}
+nav a.navbar-brand {
+  padding: 0;
+}
+.navbar-inverse {
+  background-color: #333333;
+}
+div.jumbotron {
+  background: url("../img/headline.jpg") no-repeat center;
+  color: white;
+  background-size: 100% auto;
+  height: 23vw;
+  padding-top: 2vw;
+  padding-bottom: 3vw;
+}
+div.jumbotron h1 {
+  font-size: 4vw;
+}
+div.jumbotron h2 {
+  font-size: 2vw;
+}
+main .he {
+  border-bottom: 1px dashed #999999;
+  color: #666666;
+  margin-bottom: 22px;
+  padding-bottom: 8px;
+}
+main .he h3 {
+  font-size: 28px;
+}
+main div.le li.media {
+  background-color: #FFFFFF;
+}
+main div.le li.media a {
+  padding: 10px 0 10px 10px;
+}
+main div.le div.media-body {
+  padding: 10px 10px 5px 15px;
+}
+main div.le div.media-body h4 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #333;
+  padding-bottom: 10px;
+}
+main div.le div.media-body div.leone {
+  color: #666;
+}
+main div.le div.media-body div.leone h3 {
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: normal;
+  margin: 10px 0 15px 0;
+}
+main div.le div.media-body div.leone p {
+  font-size: 15px;
+}
+main div.le div.media-body div.leone p b {
+  border: 1px solid #458B00;
+  padding: 0 10px;
+  font-weight: normal;
+  color: #458B00;
+  border-radius: 5px;
+}
+main div.le div.media-body div.rione h5 {
+  font-size: 36px;
+  color: #FF6600;
+  font-weight: bold;
+}
+main div.le div.media-body div.rione h5 small {
+  color: #999999;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+main div.le div.media-body div.rione a {
+  display: inline-block;
+  width: 152px;
+  border-radius: 4px;
+  background-color: #f60;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+main div.le div.media-body > span {
+  display: block;
+  font-size: 16px;
+  padding: 3px 0;
+}
+main div.le div.media-body > span b {
+  font-weight: normal;
+  color: #458B50;
+}
+main div.ri h3 {
+  font-size: 20px;
+  color: #666666;
+}
+main div.ri a {
+  text-decoration: none;
+  color: #666666;
+  text-align: center;
+  display: inline-block;
+}
+main div.ri a:hover {
+  text-decoration: underline;
+}
+main div.ri div.as1 div.panel-body {
+  padding: 5px 0 0 4px;
+}
+main div.ri div.as1 div.panel-body a {
+  width: calc(33.3% - 4px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #b9def0;
+  font-size: 13px;
+  padding: 5px 5px;
+}
+main div.ri div.as2 div.panel-body {
+  padding: 5px 0 0 4px;
+}
+main div.ri div.as2 div.panel-body a {
+  width: calc(50% - 4px);
+  font-size: 15px;
+}
+main div.ri div.as2 div.panel-body a img {
+  width: 100%;
+}
+main div.ri div.as2 div.panel-body p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main div.ri div.as3 div.panel-body {
+  padding: 5px 0 0 4px;
+}
+main div.ri div.as3 div.panel-body a {
+  width: calc(50% - 4px);
+  background-color: #EEEEEE;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main div.ri div.as3 div.panel-body a:hover {
+  text-decoration: none;
+  color: deepskyblue;
+}
+main li.media a {
+  width: 40%;
+}
+main li.media a img {
+  width: 100%;
+}
+footer {
+  background-color: #222222;
+}
+footer a {
+  display: block;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #4A534A;
+}
+footer dt {
+  margin: 25px 0;
+  font-size: 24px;
+  color: white;
+  border-bottom: 1px dashed #4A534A;
+  padding: 0 0 10px 0;
+}
+footer div.down {
+  line-height: 40px;
+  text-align: center;
+  background-color: #000000;
+  color: #727272;
+  font-size: 16px;
+  padding: 8px 0;
+  margin-top: 20px;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  nav ul.navbar-right {
+    float: left!important;
+  }
+  p {
+    margin: 0 0 30px;
+  }
+}
+@media (max-width: 767px) {
+  main .he h3 {
+    font-size: 20px;
+  }
+  main div.le div.media-body h4 {
+    font-size: 17px;
+    padding-bottom: 0;
+  }
+  main div.le div.media-body div.leone p {
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-bottom: 25px;
+  }
+  main div.le div.media-body div.rione h5 {
+    font-size: 22px;
+  }
+  main div.le div.media-body div.rione h5 small {
+    font-size: 13px;
+  }
+}

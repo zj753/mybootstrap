@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <title></title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        body{
+            padding-top: 50px;
+        }
+        main{
+            height: 100%;
+            width: 100%;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        .navbar{
+            min-height: 40px!important;
+        }
+        nav.navbar a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        nav.navbar form input,nav.navbar form button{
+            padding-bottom: 1px;
+            padding-top: 1px;
+            height: 25px;
+        }
+        #carousel-example-generic img{
+            height: 300px;
+            width: 100%;
+        }
+        footer{
+            background-color: darkgray;
+            color: black;
+            padding: 10px 0;
+        }
+        footer a{
+            color: #5e5e5e;
+        }
+        .myul{
+            border-radius: 5px;
+            max-width: 145px;
+            min-width: 145px;
+            border: 1px solid gainsboro;
+             position: fixed;
+             top: 370px;
+        }
+        p{
+            text-indent: 2em;
+            font-size: 15px;
+            font-family: '微软雅黑';
+            color: #5e5e5e;
+        }
+        main h4{
+            font-weight: bold;
+            text-align: center;
+        }
+        .myul li.active a{
+            background-color: #C6CCC2;
+            border-radius:0;
+        }
+        .myul li.active a:hover{
+            background-color: #C6CCC2;
+        }
+        .myul li:first-child.active a{
+            border-radius: 5px 5px 0  0;
+        }
+        .myul li:last-child.active a{
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+</head>
+<body >
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>
+<main data-spy="scroll" data-target="#myScrollspy">
+      <div class="container">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                      <img src="img/tou1.jpg" alt="...">
+                      <div class="carousel-caption">
+                          ...
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="img/tou2.jpg" alt="...">
+                      <div class="carousel-caption">
+                          ...
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="img/tou3.jpg" alt="...">
+                      <div class="carousel-caption">
+                          ...
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+          <div class="row">
+              <div class="col-sm-10 ">
+                  <h3 class="text-center" id="one">第一部分</h3>
+                  <p>
+                      听静夜之钟声，唤醒梦中之梦;观澄潭之月影，窥见身外之声。忆过往之事，恍若梦一场，梦里梦外，竟是恍若隔世的轮回。偶尔停留在时间的原地，徘徊不定，怅然若失，昨日之我，不过只是一个天真无忧的孩童，从昨日的毛虫，幻化为今日的蝴蝶，自由地飞舞于天地间，却再也不是昔日之我。
+                  </p>
+                  <p>
+                      三毛曾说：“岁月极美，就在于它必然的流逝，春花、秋月、夏日、冬雪。”或许，没有匆匆流逝的韶光，我们也不会去珍惜当下所拥有的一切，也不会因此而懂得生命的意义。因为时光飞走，流年轻度，所以每个人的生命都是有限的，都在各自的光阴里，或是活出轰轰烈烈、精彩纷呈的人生，或是守着属于自己狭小的天地，过着平淡如水的生活。无论是何种生活方式，只要是对的，都应该坚持下去。无论是失去的、错过的，每一次遗憾，都是生命给予我们的恩赐，因为有所遗憾，因为残缺，不圆满的人生才显得更加美好，更为珍贵。
+                  </p>
+                  <p>
+                      听静夜之钟声，唤醒梦中之梦;观澄潭之月影，窥见身外之声。忆过往之事，恍若梦一场，梦里梦外，竟是恍若隔世的轮回。偶尔停留在时间的原地，徘徊不定，怅然若失，昨日之我，不过只是一个天真无忧的孩童，从昨日的毛虫，幻化为今日的蝴蝶，自由地飞舞于天地间，却再也不是昔日之我。
+                  </p>
+                  <p>
+                      三毛曾说：“岁月极美，就在于它必然的流逝，春花、秋月、夏日、冬雪。”或许，没有匆匆流逝的韶光，我们也不会去珍惜当下所拥有的一切，也不会因此而懂得生命的意义。因为时光飞走，流年轻度，所以每个人的生命都是有限的，都在各自的光阴里，或是活出轰轰烈烈、精彩纷呈的人生，或是守着属于自己狭小的天地，过着平淡如水的生活。无论是何种生活方式，只要是对的，都应该坚持下去。无论是失去的、错过的，每一次遗憾，都是生命给予我们的恩赐，因为有所遗憾，因为残缺，不圆满的人生才显得更加美好，更为珍贵。
+                  </p>
+                  <p>
+                      三毛曾说：“岁月极美，就在于它必然的流逝，春花、秋月、夏日、冬雪。”或许，没有匆匆流逝的韶光，我们也不会去珍惜当下所拥有的一切，也不会因此而懂得生命的意义。因为时光飞走，流年轻度，所以每个人的生命都是有限的，都在各自的光阴里，或是活出轰轰烈烈、精彩纷呈的人生，或是守着属于自己狭小的天地，过着平淡如水的生活。无论是何种生活方式，只要是对的，都应该坚持下去。无论是失去的、错过的，每一次遗憾，都是生命给予我们的恩赐，因为有所遗憾，因为残缺，不圆满的人生才显得更加美好，更为珍贵。
+                  </p>
+                  <h3 class="text-center" >第二部分</h3>
+                  <h4 id="section-2-1">section-2-1</h4>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <h4 id="section-2-2">section-2-2</h4>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <h4 id="section-2-3">section-2-3</h4>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      在看似漫长实则短暂的生命中，每一座古桥都是人生的驿站，每一条溪流都是润泽心灵的甘泉，每一个渡口都是命运的起程。不要问生命的彼岸在何方，不要问在这旅途中，会遇见多少人，会错失多少缘分，会与多少人相识相知， 又会与多少人擦肩而过，你要相信，这世间的每一桩缘分，都是前世所修来的福分。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <h3  class="text-center" id="three">第三部分</h3>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <p>
+                      你与有缘之人相识，又与无缘之人擦肩。你以为远离了水，就可以脚踩大地，风雨兼程。谁曾知道，辗转徘徊，想要抵达生命的彼岸，寻找到最终的归宿，却又总是回到最初的起点，一切从头开始。也许，生命本就是一条河流，你要抵达生命的彼岸，就必定要以流水的的方式完成。必定要流经荒芜污浊之地 ，从悠悠山谷，从涓涓溪流到化作滚滚江河，这过程，又是该历经了多少苍凉与无奈?上善若水，从善如流，柔可克刚，再宽大的胸怀，都抵不过水的辽阔，再多的冷暖得失，在苍茫的天地之间，都显得如此地微不足道。
+                  </p>
+                  <h3 class="text-center" id="four">第四部分</h3>
+                  <p>
+                      心中一直有个美好的心愿，那就是赌书泼茶，倚楼听雨，写简约的文字，梦一回江南水乡，过着清简如水的生活，不惧过往，亦不担忧未来。任凭窗外风云交替，车水马龙，而我的内心已久安然平和，洁净无物。看几场春日芳菲，等几度新月变圆，要知道，月圆是诗，月缺是画，人生不经历几场聚散离合，不经历几次风雨磨难，不曾跌倒，又怎能坚强地站起来?
+                  </p>
+                  <p>
+                      心中一直有个美好的心愿，那就是赌书泼茶，倚楼听雨，写简约的文字，梦一回江南水乡，过着清简如水的生活，不惧过往，亦不担忧未来。任凭窗外风云交替，车水马龙，而我的内心已久安然平和，洁净无物。看几场春日芳菲，等几度新月变圆，要知道，月圆是诗，月缺是画，人生不经历几场聚散离合，不经历几次风雨磨难，不曾跌倒，又怎能坚强地站起来?
+                  </p>
+                  <p>
+                      心中一直有个美好的心愿，那就是赌书泼茶，倚楼听雨，写简约的文字，梦一回江南水乡，过着清简如水的生活，不惧过往，亦不担忧未来。任凭窗外风云交替，车水马龙，而我的内心已久安然平和，洁净无物。看几场春日芳菲，等几度新月变圆，要知道，月圆是诗，月缺是画，人生不经历几场聚散离合，不经历几次风雨磨难，不曾跌倒，又怎能坚强地站起来?
+                  </p>
+                  <p>
+                      心中一直有个美好的心愿，那就是赌书泼茶，倚楼听雨，写简约的文字，梦一回江南水乡，过着清简如水的生活，不惧过往，亦不担忧未来。任凭窗外风云交替，车水马龙，而我的内心已久安然平和，洁净无物。看几场春日芳菲，等几度新月变圆，要知道，月圆是诗，月缺是画，人生不经历几场聚散离合，不经历几次风雨磨难，不曾跌倒，又怎能坚强地站起来?
+                  </p>
+                  <h3 class="text-center" id="five">
+                      第五部分
+                  </h3>
+                  <p>
+                      禅的时光，总是寂静无声，就蕴藏在平常琐碎的小事当中，不是你端坐蒲团，手捧经卷，耳听梵音，就能够到达禅意的境界;不是你疏离尘世，而是让自己在尘世中修炼得更加质朴。人生这本蕴含真理的书，其实掩藏在平淡的物事中，返璞归真，随缘即安。就如白落梅所说：“人生的终点，不是在山水踏尽时，亦不是在生命结束后，而是于放下包袱的那一刻。当你真的放下，纵算一生云水漂泊，亦可以淡若清风，自在安宁。倘若心中藏一弯明月，又何惧世相迷离，烟火红尘，同样可以静赏落花，闲看白云。”
+                  </p>
+                  <p>
+                      “佛在灵山莫远求，灵山只在汝心头。人人有座灵山塔，好向灵山塔下修。”唯有入世，才能出世，唯有真正的拿起过，才能够真正的放下。任凭世间尔虞我诈，而我随心潇洒，既不为权贵所垂首，也不为世情所转变。
+                  </p>
+                  <p>
+                      夜深人静时，听一曲《半壶纱》在耳边轻轻回荡：“倘若我心中的山水，你眼中都看到，我便一步一莲花祈祷。怎知那浮生一片草，岁月催人老，风月花鸟，一笑尘缘了。”世间万千道风景，都抵不过心灵的澄澈无染。无论是阳春三月、生机盎然的春季还是枯寂冷落的秋季，只要心灵干净、素朴，就可以感受到这个充满爱与温暖的人间。
+                  </p>
+              </div>
+              <div class="col-sm-2" id="myScrollspy" >
+                  <!--data-spy="affix" data-offset-top="195"滑动时固定位置-->
+                  <ul class="nav nav-pills nav-stacked myul text-center" >
+                      <li><a href="#carousel-example-generic">返回顶部</a></li>
+                      <li class="active"><a href="#one">第一部分</a></li>
+                      <li class="dropdown">
+                          <a class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              第二部分
+                              <span class="caret"></span>
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                              <li><a href="#">section-2-1</a></li>
+                              <li><a href="#">section-2-2</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">section-2-3</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#three">第三部分</a></li>
+                      <li><a href="#four">第四部分</a></li>
+                      <li><a href="#five">第五部分</a></li>
+                  </ul>
+              </div>
+
+          </div>
+      </div>
+    <footer class="hidden-xs hidden-sm">
+        <div class="container">
+            <div class="row text-center" >
+                <div class="col-sm-3 ">
+                    <h4>关于</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/about/">关于我们</a></li>
+                        <li><a href="/ad/">广告合作</a></li>
+                        <li><a href="/links/">友情链接</a></li>
+                        <li><a href="/hr/">招聘</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 ">
+                    <h4>联系方式</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank">新浪微博</a>
+                        </li>
+                        <li><a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank">新浪微博</a>
+                        </li>
+                        <li><a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank">新浪微博</a>
+                        </li>
+                        <li><a href="mailto:admin@bootcss.com">电子邮件</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 ">
+                    <h4>旗下网站</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.golaravel.com/" target="_blank">Laravel</a></li>
+                        <li><a href="http://www.ghostchina.com/" target="_blank">Ghost中国</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 ">
+                    <h4>赞助商</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="http://www.ucloud.cn/" target="_blank">UCloud</a></li>
+                        <li><a href="https://www.upyun.com" target="_blank">又拍云</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center">
+                <ul class="list-inline">
+                    <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a></li>
+                    <li>京公网安备11010802014853</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(function(){
+$("#carousel-example-generic").carousel({
+interval:1500
+});
+$("#carousel-example-generic a.left").click(function(){
+$(".carousel").carousel("prev");
+});
+$("#carousel-example-generic a.right").click(function(){
+$(".carousel").carousel("next");
+})
+})
+</script>
+</body>
+</html>

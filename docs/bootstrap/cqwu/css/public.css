@@ -1,0 +1,133 @@
+.navbar-nav > li > a,
+.navbar-brand {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav.navbar {
+  min-height: 40px;
+}
+nav.navbar .form-control {
+  height: 21px;
+  width: 139px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #8091B4;
+}
+.navbar-inverse {
+  background-color: #012269;
+}
+nav.navbar-inverse .navbar-nav > li > a {
+  color: #C7CAD6;
+  font-size: 15px;
+}
+nav .nav > li > a {
+  padding: 10px 5px;
+}
+nav .glyphicon {
+  color: #C7CAD6;
+  top: 5px;
+  left: 10px;
+}
+body > header {
+  background: url(../img/top_bg.jpg) no-repeat right top;
+}
+body > header div.top {
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+body > header div.down {
+  position: relative;
+  background-color: #094EA2;
+  margin-top: 10px;
+}
+body > header div.down div.row {
+  display: flex;
+  height: 45px;
+  line-height: 45px;
+}
+body > header div.down div.row dl {
+  margin-top: 0;
+  height: 45px;
+  line-height: 45px;
+}
+body > header div.down div.row dl dt {
+  padding: 0 25px;
+  color: white;
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+  font-weight: normal;
+  text-align: center;
+}
+body > header div.down div.row dl dt:hover {
+  background-color: #4197D0;
+}
+body > header div.down div.row dl dd {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 2;
+}
+body > header div.down div.row dl dd a {
+  display: inline-block;
+  padding: 7px 15px;
+  color: black;
+  font-size: 16px;
+}
+body > header div.down div.row dl dd a:hover,
+body > header div.down div.row dl dd a:active {
+  color: #4197D0;
+  text-decoration: none;
+}
+body > header div.down div.row dl:hover dd {
+  display: block;
+}
+footer {
+  background: url("../img/footer_bg.jpg") no-repeat center center;
+  margin-top: 30px;
+}
+footer div.up {
+  padding: 40px 80px 0;
+}
+footer div.up p.plice {
+  background: url("../img/beian.png") no-repeat left center;
+  padding-left: 25px;
+  margin-top: 20px;
+}
+footer div.up p.plice a {
+  color: white;
+}
+footer div.up dl * {
+  color: white;
+}
+footer div.up dl a {
+  display: block;
+  line-height: 22px;
+}
+footer div.up dl dt {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+}
+footer div.up dl dt:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 80px;
+  background-color: white;
+  margin-left: -60px;
+  margin-top: 25px;
+}
+footer div.down {
+  background-color: #041438 ;
+  color: #6D7180;
+  text-align: center;
+  padding: 10px 0;
+}

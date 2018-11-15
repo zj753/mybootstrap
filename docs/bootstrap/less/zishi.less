@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts1/icomoon.eot') format('eot'),
+  url('../fonts1/icomoon.svg') format('svg'),
+  url('../fonts1/icomoon.ttf') format('ttf'),
+  url('../fonts1/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+div.jumbotron {
+  margin-bottom: 0;
+}
+div.adv{
+  padding: 15px 0;
+  background-color: #F5F5F5;
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 30px;
+  span{
+    margin: 0 15px 0 10px;
+  }
+  a{
+    color: #555555;
+    font-size: 15px;
+    margin-left: 10px;
+    &:hover{
+      color: #555555;
+    }
+    &:last-of-type:hover{
+      color: red;
+    }
+  }
+  b:before{
+    content: "\f086";
+    position: absolute;
+    font-family: 'my_font';
+    margin-left: -15px;
+    font-size: 18px;
+    margin-top: -2px;
+  }
+  i{
+    margin-right: 10px;
+  }
+  i:before{
+    content: "\f18a";
+    position: absolute;
+    font-family: 'my_font';
+    margin-left: -15px;
+    font-size: 18px;
+    margin-top: -2px;
+  }
+}
+main{
+  div.he{
+    text-align: center;
+    margin-bottom: 30px;
+    h2{
+      font-size: 42px;
+      letter-spacing: -1px;
+    }
+
+    p{
+      margin: 0 auto ;
+      padding-bottom: 10px;
+      width: 60%;
+      border-bottom: 1px solid #DDDDDD;
+    }
+  }
+   div.thumbnail{
+     margin-bottom: 30px;
+     a{
+       width: 100%;
+       text-decoration: none;
+       img{
+         width: 100%;
+       }
+     }
+     div.caption{
+       height: 200px;
+       overflow-y: hidden;
+       span{
+         font-size: 16px;
+         color: #777777;
+       }
+       p{
+         color: #555555;
+       }
+     }
+     text-align: center;
+   }
+}
+footer{
+  color: #777;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 50px;
+  dl{
+    dt{
+      font-size: 16px;
+      color: #563D7C;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    dd{
+      a{
+        display: block;
+        color: #777777;
+        &:hover{
+          color: #777;
+        }
+      }
+    }
+  }
+}

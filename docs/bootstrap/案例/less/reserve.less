@@ -1,0 +1,115 @@
+@charset "UTF-8";
+body{
+  margin-top: 50px;
+}
+.navbar-brand img{
+  height: 50px;
+}
+nav a.navbar-brand{
+  padding: 0;
+}
+.navbar-inverse{
+  background-color: #333333;
+}
+footer{
+  background-color:#222222;
+  a{
+    display: block;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #4A534A;
+  }
+  dt{
+    margin: 25px 0;
+    font-size: 24px;
+    color: white;
+    border-bottom: 1px dashed #4A534A;
+    padding: 0 0 10px 0;
+  }
+  div.down{
+    line-height: 40px;
+    text-align: center;
+    background-color: #000000;
+    color: #727272;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}
+div.jumbotron{
+  background: url("../img/adver.jpg") no-repeat center ;
+  background-size: 100% 100%;
+  height:24.5vw;
+   margin: 0 0 30px 0;
+   padding: 0;
+  .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+      color: white;
+      font-size:~'calc(15px + 3vw)';
+      small{
+        color: white;
+        font-size:~'calc(12px + 1vw)';
+      }
+  }
+
+  }
+}
+main{
+  dd a{
+    margin-right: 15px;
+    &.active{
+      padding: 03px;
+      background-color: #006400;
+      color: white;
+      border-radius: 3px;
+    }
+  }
+  table th{
+    text-align: center;
+  }
+
+  .jingdian{
+    background-color: #EEEEEE;
+    a{
+      width: ~'calc(33.3% - 4px)';
+      line-height: 25px;
+      background-color: #FFFFFF;
+      padding: 5px 0;
+      border-radius: 2px;
+    }
+  }
+  .hot_sale{
+    a{
+      width: ~'calc(50% - 4px)';
+  }
+  }
+  .hot_sale,.jingdian,.baby{
+    a{
+      display: inline-block;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+  .baby{
+    background-color: #EEEEEE;
+    a{
+      width: ~'calc(50% - 4px)';
+      margin-bottom: 15px;
+      font-size: 16px;
+      padding: 5px 10px 5px 5px;
+      background-color: white;
+      span{
+        margin-right: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) and (min-width: 768px){
+  nav ul.navbar-right{
+    float: left!important;
+  }
+}

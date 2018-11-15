@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'my_font';
+  src: url('../fonts1/icomoon.eot') format('eot'), url('../fonts1/icomoon.svg') format('svg'), url('../fonts1/icomoon.ttf') format('ttf'), url('../fonts1/icomoon.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+div.jumbotron {
+  margin-bottom: 0;
+}
+div.adv {
+  padding: 15px 0;
+  background-color: #F5F5F5;
+  text-align: center;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 30px;
+}
+div.adv span {
+  margin: 0 15px 0 10px;
+}
+div.adv a {
+  color: #555555;
+  font-size: 15px;
+  margin-left: 10px;
+}
+div.adv a:hover {
+  color: #555555;
+}
+div.adv a:last-of-type:hover {
+  color: red;
+}
+div.adv b:before {
+  content: "\f086";
+  position: absolute;
+  font-family: 'my_font';
+  margin-left: -15px;
+  font-size: 18px;
+  margin-top: -2px;
+}
+div.adv i {
+  margin-right: 10px;
+}
+div.adv i:before {
+  content: "\f18a";
+  position: absolute;
+  font-family: 'my_font';
+  margin-left: -15px;
+  font-size: 18px;
+  margin-top: -2px;
+}
+main div.he {
+  text-align: center;
+  margin-bottom: 30px;
+}
+main div.he h2 {
+  font-size: 42px;
+  letter-spacing: -1px;
+}
+main div.he p {
+  margin: 0 auto ;
+  padding-bottom: 10px;
+  width: 60%;
+  border-bottom: 1px solid #DDDDDD;
+}
+main div.thumbnail {
+  margin-bottom: 30px;
+  text-align: center;
+}
+main div.thumbnail a {
+  width: 100%;
+  text-decoration: none;
+}
+main div.thumbnail a img {
+  width: 100%;
+}
+main div.thumbnail div.caption {
+  height: 200px;
+  overflow-y: hidden;
+}
+main div.thumbnail div.caption span {
+  font-size: 16px;
+  color: #777777;
+}
+main div.thumbnail div.caption p {
+  color: #555555;
+}
+footer {
+  color: #777;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 50px;
+}
+footer dl dt {
+  font-size: 16px;
+  color: #563D7C;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+footer dl dd a {
+  display: block;
+  color: #777777;
+}
+footer dl dd a:hover {
+  color: #777;
+}

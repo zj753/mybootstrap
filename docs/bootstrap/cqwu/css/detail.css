@@ -1,0 +1,64 @@
+@charset "UTF-8";
+main {
+  margin: 30px 0;
+}
+main aside div.panel-heading h4 {
+  font-size: 18px;
+  color: #181818;
+  font-weight: 600;
+}
+main aside div.panel-heading h4 small {
+  margin-left: 10px;
+}
+main aside ul.list-group a {
+  display: block;
+  padding: 10px 30px;
+  font-size: 15px;
+}
+main aside .panel-heading {
+  padding: 15px  0 15px 20px;
+}
+main aside .panel-heading h3 {
+  margin: 0;
+}
+main div.new_list div.panel-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 33px;
+}
+main div.new_list div.panel-heading h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+main div.new_list div.panel-heading b {
+  font-weight: 100;
+  color: #337AB7;
+}
+main div.new_list div.panel {
+  margin-bottom: 0;
+}
+main div.new_list div.panel div.panel-body {
+  padding: 30px 50px;
+}
+main div.new_list div.panel div.panel-body h3 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+main div.new_list div.panel div.panel-body > span {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+main div.new_list div.panel div.panel-body > p {
+  font-size: 14px;
+  text-indent: 2em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+main div.new_list div.panel div.panel-body img {
+  width: 100%;
+  margin-bottom: 10px;
+}

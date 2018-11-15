@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #div1{
+            width: 200px;
+            height: 700px;
+            position: absolute;
+            top: 30px;
+            left: -200px;
+            background: url("bootstrap/img/ce2.jpg") no-repeat;
+            background-size: cover;
+            box-shadow: 1px 1px 2px 1px grey;
+
+        }
+        span{
+            width: 30px;
+            height: 80px;
+            text-align: center;
+            background: url("bootstrap/img/ce5.jpg") no-repeat center;
+            color: black;
+            position: absolute;
+            display: inline-block;
+            padding-top: 10px;
+            left: 200px;
+            top: 80px;
+            box-shadow: 1px 1px 2px 1px grey;
+        }
+
+        nav h3{
+            color:black;
+            letter-spacing: 1px;
+            margin: 0;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            background: url("bootstrap/img/ce1.jpg") no-repeat;
+        }
+        nav div.bottom{
+            width: 200px;
+            height: 650px;
+            overflow-y: auto;
+        }
+        nav dl dd{
+            display: none;
+        }
+        nav dl{
+            padding: 10px;
+        }
+        nav dl dt{
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            color: #4a616b;
+            padding: 5px 0 5px 20px;
+        }
+        nav dl:hover dd{
+            display: block;
+            position: relative;
+            padding: 5px 5px 5px 20px;
+            /*margin-left: 20px;*/
+            border-bottom: 1px dashed darkgrey;
+        }
+        nav dl:hover dd a{
+            text-decoration: none;
+            color: black;
+        }
+        nav dl:hover dd a:hover{
+            /*color: white;*/
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+        }
+        .main iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var div1=document.getElementById('div1');
+            div1.onmouseover=function(){
+                mousemv(0);
+            };
+            div1.onmouseout=function(){
+                mousemv(-200);
+            }
+        };
+        var timer=null;
+        function mousemv(itarget){
+            var div1=document.getElementById('div1');
+            clearInterval(timer);
+            var speed=0;
+            if(div1.offsetLeft<itarget){
+                speed=10;
+            }else{
+                speed=-10;
+            }
+            timer=setInterval(function(){
+
+                if(div1.offsetLeft==itarget){
+                    clearInterval(timer);
+                }else{
+                    div1.style.left=div1.offsetLeft+speed+'px';
+                }
+            },30);
+        }
+    </script>
+</head>
+<body>
+<main class="main">
+    <nav id="div1" >
+        <h3>分类</h3>
+        <div class="bottom">
+            <dl>
+                <dt>bootstrap</dt>
+                <dd> <a href="bootstrap/自适应.html" target="iframe">bootstrap官网</a></dd>
+                <dd> <a href="bootstrap/案例/information.html" target="iframe">案例/information</a></dd>
+                <dd> <a href="bootstrap/案例/订票系统.html" target="iframe">案例/订票系统</a></dd>
+                <dd> <a href="bootstrap/cqwu/index.html" target="iframe">cqwu/index</a></dd>
+                <dd> <a href="bootstrap/cqwu/列表页.html" target="iframe">cqwu/列表页</a></dd>
+                <dd> <a href="bootstrap/cqwu/详细页.html" target="iframe">cqwu/详细页</a></dd>
+
+            </dl>
+            <span>观赏</span>
+        </div>
+    </nav>
+    <iframe src="bootstrap/自适应.html" frameborder="0" name="iframe" scrolling="auto">
+    </iframe>
+</main>
+
+
+<script src="js/jquery.js"></script>
+</body>
+</html>
